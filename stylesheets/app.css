@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=app.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 16px;
+}
+/*# sourceMappingURL=app.css.map */
