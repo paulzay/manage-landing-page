@@ -42,7 +42,7 @@ nav .nav-links ul li a:hover {
   color: lightgray;
 }
 
-nav .btn {
+.btn {
   height: 40px;
   color: white;
   background-color: #f25f3a;
@@ -53,7 +53,40 @@ nav .btn {
   cursor: pointer;
 }
 
-nav .btn:hover {
+.btn:hover {
   background-color: #d36666;
+}
+
+.sec1 {
+  margin: 30px 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec1 .sc1-left {
+  padding-top: 40px;
+}
+
+.sec1 h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #242d52;
+}
+
+.sc2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sc2-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=app.css.map */

@@ -41,18 +41,38 @@ nav{
     }
     }
   }
-  .btn{
-    height: 40px;
-    color: white;
-    background-color: $BR;
-    margin-top: 10px;
-    width: 150px;
-    border-radius: 40px;
-    border: none;
-    cursor: pointer;
-    &:hover{
-      background-color: rgb(211, 102, 102);
-    }
-  }
+
   
+}
+.btn{
+  height: 40px;
+  color: white;
+  background-color: $BR;
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb(211, 102, 102);
+  }
+}
+.sec1{
+  margin: 30px 10vw;
+  display: flex;
+  .sc1-left{
+    padding-top: 40px;
+  }
+  h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: $D-B;
+  }
+}
+.sc2{
+  display: flex;
+}
+.sc2-right{
+  display: flex;
+  flex-direction: column;
 }
