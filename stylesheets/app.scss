@@ -9,9 +9,50 @@ $V-P-R: hsl(13, 100%, 96%);
 $V-L-G: hsl(0, 0%, 98%);
 
 //STYLES
+* a {
+  text-decoration: none;
+}
+* li{
+  list-style: none;
+}
 body{
   margin: 0;
   padding: 0;
+  font-family: $font-stack;
   background-color:white;
   font-size: 16px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10vw;
+  vertical-align: middle;
+  img{
+    height: 30px;
+    margin-top: 15px;
+  }
+  .nav-links ul li{
+    display: inline-flex;
+    margin: auto 10px;
+    color: $V-D;
+    a{
+      &:hover{
+        color: lightgray;
+    }
+    }
+  }
+  .btn{
+    height: 40px;
+    color: white;
+    background-color: $BR;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(211, 102, 102);
+    }
+  }
+  
 }
