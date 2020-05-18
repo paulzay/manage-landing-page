@@ -68,25 +68,30 @@ nav .nav-links ul li a:hover {
   padding-top: 40px;
 }
 
+.sec1 .sc1-right img {
+  padding-left: 100px;
+}
+
 .sec1 h1 {
   font-size: 40px;
   font-weight: 800;
   color: #242d52;
 }
 
+.sec1 p {
+  color: lightgray;
+}
+
 .sc2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 30px 10vw;
+  display: inline;
+}
+
+.sc2-left {
+  float: left;
 }
 
 .sc2-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  float: right;
 }
 /*# sourceMappingURL=app.css.map */

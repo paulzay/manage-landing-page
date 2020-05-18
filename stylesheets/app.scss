@@ -63,16 +63,26 @@ nav{
   .sc1-left{
     padding-top: 40px;
   }
+  .sc1-right img{
+    padding-left: 100px;
+  }
   h1{
     font-size: 40px;
     font-weight: 800;
     color: $D-B;
   }
+  p{
+    color: lightgray;
+  }
 }
 .sc2{
-  display: flex;
+  margin: 30px 10vw;
+  display: inline;
+}
+.sc2-left{
+  float: left;
 }
 .sc2-right{
-  display: flex;
-  flex-direction: column;
+  float: right;
+
 }
