@@ -22,67 +22,139 @@ body{
   background-color:white;
   font-size: 16px;
 }
-nav{
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 10vw;
-  vertical-align: middle;
-  img{
-    height: 30px;
-    margin-top: 15px;
+@media screen and (min-width:375px){
+  .menu-toggle{
+    display: none;
   }
-  .nav-links ul li{
-    display: inline-flex;
-    margin: auto 10px;
-    color: $V-D;
-    a{
-      &:hover{
-        color: lightgray;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10vw;
+    vertical-align: middle;
+    img{
+      height: 30px;
+      margin-top: 15px;
     }
+    .nav-links ul li{
+      display: inline-flex;
+      margin: auto 10px;
+      color: $V-D;
+      a{
+        &:hover{
+          color: lightgray;
+      }
+      }
+    }  
+  }
+  .btn{
+    height: 40px;
+    color: white;
+    background-color: $BR;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(211, 102, 102);
     }
   }
-
+  .sec1{
+    margin: 30px 10vw;
+    display: flex;
+    .sc1-left{
+      padding-top: 40px;
+    }
+    .sc1-right img{
+      padding-left: 100px;
+    }
+    h1{
+      font-size: 40px;
+      font-weight: 800;
+      color: $D-B;
+    }
+    p{
+      color: lightgray;
+    }
+  }
+  .sc2{
+    margin: 30px 10vw;
+    display: inline;
+  }
+  .sc2-left{
+    float: left;
+  }
+  .sc2-right{
+    float: right;
   
-}
-.btn{
-  height: 40px;
-  color: white;
-  background-color: $BR;
-  margin-top: 10px;
-  width: 150px;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-  &:hover{
-    background-color: rgb(211, 102, 102);
   }
 }
-.sec1{
-  margin: 30px 10vw;
-  display: flex;
-  .sc1-left{
-    padding-top: 40px;
-  }
-  .sc1-right img{
-    padding-left: 100px;
-  }
-  h1{
-    font-size: 40px;
-    font-weight: 800;
-    color: $D-B;
-  }
-  p{
-    color: lightgray;
-  }
-}
-.sc2{
-  margin: 30px 10vw;
-  display: inline;
-}
-.sc2-left{
-  float: left;
-}
-.sc2-right{
-  float: right;
 
+
+@media screen and (max-width:375px){
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 10px;
+  }
+  .menu-toggle:before{
+    content: '';
+    line-height: 40px;       
+  }
+  .menu-toggle.active:before{
+    content: '';       
+  }
+  .nav-links, .btn__start{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    vertical-align: middle;
+    img{
+     margin-top: 5px;
+    }
+  }
+  .sec1{
+    margin: 30px 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    .sc1-left{
+      padding-top: 10px;
+    }
+    .sc1-right img{
+      width: 110%;
+    }
+    h1{
+      font-size: 30px;
+      text-align: center;
+      font-weight: 800;
+      color: $D-B;
+    }
+    p{
+      text-align: center;
+      color: lightgray;
+    }
+  }
+  .btn{
+    height: 40px;
+    color: white;
+    background-color: $BR;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(211, 102, 102);
+    .btn__start{
+      align-self: center;
+    }
+    }
+
+  }
 }
